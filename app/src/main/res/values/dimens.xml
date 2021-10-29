@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BaslıkSize">24sp</dimen>
+    <dimen name="YazılanSize">20sp</dimen>
+    <dimen name="ButtonSize">20sp</dimen>
+    <dimen name="linrhig">49dp</dimen>
+    <dimen name="butonhizza">30px</dimen>
+</resources>

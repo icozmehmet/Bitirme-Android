@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#550404"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-143dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="327dp"
+            android:layout_height="226dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nametv"
+                android:layout_width="227dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ism"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+            <EditText
+                android:id="@+id/nameetv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mailtv"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+            <EditText
+                android:id="@+id/mailetv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sifretv"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sfre"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+            <EditText
+                android:id="@+id/sifreetv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button"
+            android:textSize="@dimen/ButtonSize"
+            android:text="@string/g_ncelle"
+             />
+
+        <TextView
+            android:id="@+id/goster"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/YazılanSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

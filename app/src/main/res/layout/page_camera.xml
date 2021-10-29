@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraPage">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#550404"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-143dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="327dp"
+            android:layout_height="183dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="221dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="221dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Button"
+                android:textSize="@dimen/ButtonSize"
+                android:text="@string/kamera"
+                android:translationY="10px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/dosyaadi"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/dosya_ad"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textcolor"
+                    android:gravity="center"
+                    android:textColorHint="#70F4511E"
+                    android:textSize="@dimen/YazılanSize" />
+
+                <Button
+                    android:id="@+id/bytcevir"
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Button"
+                    android:text="@string/dosyaya_kay_t"
+                    android:textSize="@dimen/ButtonSize"
+                    android:translationY="15px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sifrealc"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/YazılanSize" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dosyaoku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Button"
+                android:text="@string/dosya_oku"
+                android:textSize="@dimen/ButtonSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

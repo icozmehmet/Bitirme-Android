@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#550404"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-143dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="327dp"
+            android:layout_height="226dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button"
+            android:text="@string/camera"
+            android:textSize="@dimen/ButtonSize"
+            android:translationY="10px" />
+
+        <Button
+            android:id="@+id/bytcevir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button"
+            android:textSize="@dimen/ButtonSize"
+            android:text="@string/seskyt"
+            android:translationY="15px" />
+
+        <Button
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button"
+            android:textSize="@dimen/ButtonSize"
+            android:text="@string/yazi"
+            android:translationY="20px" />
+
+        <Button
+            android:id="@+id/profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Button"
+            android:text="@string/profil"
+            android:textSize="@dimen/ButtonSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/sifreleme"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+            <Button
+                android:id="@+id/newp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Button"
+                android:textSize="@dimen/ButtonSize"
+                android:text="@string/sifre_yenile" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

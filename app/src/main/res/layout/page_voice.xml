@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VoicePage">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#550404"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-143dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="327dp"
+            android:layout_height="226dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kayitbaslat"
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Button"
+                android:onClick="btnkayitbaslat"
+                android:text="@string/kay_t_ba_lat"
+                android:textSize="@dimen/ButtonSize" />
+
+            <Button
+                android:id="@+id/kayitdurdur"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Button"
+                android:onClick="btnkayitdurdur"
+                android:textSize="@dimen/ButtonSize"
+                android:text="@string/kay_t_durdur" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/baslat"
+                android:layout_width="21dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Button"
+                android:onClick="btnoynat"
+                android:text="@string/ba_lat"
+                android:textSize="@dimen/ButtonSize" />
+
+            <Button
+                android:id="@+id/durdur"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Button"
+                android:onClick="btndurdur"
+                android:textSize="@dimen/ButtonSize"
+                android:text="@string/durdur" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dosyaad"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/dosya_ad"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="@dimen/YazılanSize"
+                android:textColor="@color/textcolor"
+                android:textColorHint="#AEE63A05" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sfralv"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+            <TextView
+                android:id="@+id/bytes"
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bytss"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:textSize="@dimen/ButtonSize"
+            android:background="@color/Button"
+        android:text="@string/bytes" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

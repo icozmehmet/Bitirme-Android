@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPage">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#550404"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="327dp"
+            android:layout_height="225dp"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linrhig"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adi"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/ism"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/BaslıkSize"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                app:fontFamily="sans-serif-black" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="252dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linrhig"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mailtext"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:text="@string/email"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/BaslıkSize"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                app:fontFamily="sans-serif-black" />
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/YazılanSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sifre"
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="12sp"
+                android:text="ŞİFRE"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#DDBA20"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                app:fontFamily="sans-serif-black" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="357dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textColor="#FDD835"
+                android:textSize="@dimen/YazılanSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/encryption"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Veri Şifresi"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/BaslıkSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/encryptet"
+                android:layout_width="283dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:textSize="@dimen/YazılanSize"
+                android:textColor="@color/textcolor"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FB8A00"
+            android:text="@string/kytol"
+            android:translationY="@dimen/butonhizza" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Encryption</string>
+    <string name="email">E-MAİL</string>
+    <string name="sfre">ŞİFRE</string>
+    <string name="s">Giriş</string>
+    <string name="yeni">Yeni</string>
+    <string name="ism">İSİM</string>
+    <string name="kytol">KAYIT OL</string>
+    <string name="camera">Kamera</string>
+    <string name="seskyt">Ses Kaydı</string>
+    <string name="yazi">Yazı Yazma</string>
+    <string name="profil">Profil</string>
+    <string name="sifre_yenile">Sifre Yenile</string>
+    <string name="kamera">Kamera</string>
+    <string name="dosya_oku">Dosya Oku</string>
+    <string name="dosyaya_kay_t">Dosyaya Kayıt</string>
+    <string name="kay_t_ba_lat">Kayıt Başlat</string>
+    <string name="kay_t_durdur">Kayıt Durdur</string>
+    <string name="ba_lat">Başlat</string>
+    <string name="durdur">Durdur</string>
+    <string name="dosya_ad">DOSYA ADİ</string>
+    <string name="bytes">Bytes</string>
+    <string name="dosyadan_al">Dosyadan Al</string>
+    <string name="dosyaya_kaydet">Dosyaya Kaydet</string>
+    <string name="g_ncelle">GÜNCELLE</string>
+</resources>
